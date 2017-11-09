@@ -57,7 +57,9 @@
 }
 
 select{
-	font-size:32px;
     border: 0px;
     -webkit-appearance: none;
+    font-size:12px;
+    font-family:"Microsoft Yahei",simsun;
+    color:#555;
 }

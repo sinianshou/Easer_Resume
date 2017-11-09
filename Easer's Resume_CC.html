@@ -13,28 +13,42 @@
 			<div class="summary">
 			<img width="100" height="130" align="right" class="headerImg" alt="刘玉泽" src="./htmlSource/EaserIcon01.jpg">
 			<h1>
-				<select id="select" onchange="window.location=this.value;">  
+				<select id="select" onchange="window.location=this.value;" style="font-size:32px;">  
 				<option value="./Easer's Resume_CE.html">Liu.Easer </option>  
 				<option value="./Easer's Resume_CC.html" selected="selected">刘玉泽</option>  
 				</select>
 				</h1>
 			男<span class="ver-line">|</span>未婚<span class="ver-line">|</span>1989年12月生<span class="ver-line">|</span>户口：吉林-四平，中国
-			<br>现居住于：中国，北京
+			<br>现居住于：
+				<select id="select01">
+					<option selected="selected">中国，长春</option>
+					<option>中国，北京</option>
+				</select>
 			<br>5年工作经验
-			<p>手机：+8615044158006</p>
-			<p>E-mail：<a href="mailto:liu.easer@qq.com">liu.easer@qq.com</a></p>
+			<p>手机：
+				<select id="select01">  
+					<option selected="selected">+8615044158006</option>  
+				</select>
+			</p>
+			<p>E-mail：
+				<select id="select01">  
+					<option selected="selected">liu.easer@qq.com</option> 
+					<option>easer.liu01@gmail.com</option>  
+				</select>
+			</p>
 			<p>GitHub：<a href="https://github.com/sinianshou">https://github.com/sinianshou</a></p>
 			</div>
 			<dl class="details">
 				<dt><h5>求职意向</h5></dt>
 				<dd>
 					<ul>
-						<li><strong>工作性质：</strong>全职</li>
-						<li><strong>期望职业：</strong>IOS开发工程师、游戏开发</li>
-						<li><strong>期望行业：</strong>计算机软件、网络游戏、互联网/电子商务</li>
-						<li><strong>期望地区：</strong>中国，北京</li>
-						<li><strong>期望月薪：</strong>8000-10000 元/月</li>
-						<li><strong>目前状况：</strong>目前处于离职状态，可于12月份上岗</li>
+						<li><strong>期望职业：</strong>
+							<select id="select01">  
+								<option selected="selected">开发工程师</option> 
+								<option>开发技术岗位</option>  
+							</select>
+						</li>
+						<li><strong>目前状况：</strong> 目前处于离职状态，可于12月份上岗</li>
 					</ul>
 				</dd>
 				<dt><h5>自我评价</h5></dt>
@@ -48,8 +62,12 @@
 				<dd>
 					<div class="work-experience">
 						<p>2016/10 -- 2017/10</p>
-						<h6>于吉隆坡学习英语体验生活</h6>
-					</div>
+						<h6>Pusat Bahasa Titian Jaya(Kuala Lumpur) Sdn Bhd <span class="ver-line">|</span> International Foundation English</h6>
+						<p style="width:574px; overflow:hidden;word-break: break-all; word-wrap:break-word;">
+							于吉隆坡 Pusat Bahasa Titian Jaya(Kuala Lumpur) Sdn Bhd 完成 International Foundation English (Elementary & Intermediate & Advanced Level) 课程。
+							获取 CES International English Examination Board (CESIEEB)。学业期间以业余时间编写用以查询游戏数据的 LOLHelper app。
+						</p>
+					</div> 
 					<div class="work-experience">
 						<p>2015/09 -- 2016/10</p>
 						<h6>长春径点科技有限公司<span class="ver-line">|</span>IOS开发</h6>
@@ -82,17 +100,39 @@
 				<dt><h5>项目经验</h5></dt>
 				<dd>
 					<div class="project-experience">
+						<p>2017/06 -- 2017/09</p>
+						<h6>LOLHelper（独立兴趣研发）</h6>
+						<div>
+							<p style="width:574px; overflow:hidden;word-break: break-all; word-wrap:break-word;">
+								<strong>责任描述：</strong>
+								<br>1.利用学习的业余时间，以 Objective-C 进行编写app。
+								<br>2.通过 Riot 的 API 来获取相应的游戏数据并储存到 SQLite 中。
+								<br>3.在合理的时机在 app 的各个 View 上显示游戏数据。
+								<br>4.利用 CoreGraphics 实现折线图以及其他图标。
+								<br>5.实现各 View 之间的转场动画。
+								<br>6.修复测试期间发现的BUG。
+							</p>
+							<p style="width:574px; overflow:hidden;word-break: break-all; word-wrap:break-word;">
+								<strong>项目简介：</strong>
+								<br>方便玩家查询在英雄联盟南美服务器中的各种详细游戏数据，亦可依据用户名来查询特定玩家的近期游戏历史数据，比较同场游戏中不同玩家的详细数据，
+								以了解不同玩家的的擅长以及弱点，改善玩家的游戏能力。
+							</p>
+						</div>
+					</div>
+					<div class="project-experience">
 						<p>2013/11 -- 2016/10</p>
 						<h6>CG（公司自主产品）</h6>
 						<div>
 							<p style="width:574px; overflow:hidden;word-break: break-all; word-wrap:break-word;">
 								<strong>责任描述：</strong>
-								<br>依据客户需求以及Desigen，实现App的Scan Report界面以及相关数据操作功能，依据优先级繁简度修复BUG，与同事协作如期将产品交付到客户手里。
+								<br>1.依据客户需求以及PM提供的Desigen，实现App的Scan Report界面各控件的布局。
+								<br>2.实现对相关数据删、改、隔离等操作。
+								<br>3.依据优先级繁简度修复BUG，以保证功能正常实现。
 							</p>
 							<p style="width:574px; overflow:hidden;word-break: break-all; word-wrap:break-word;">
 								<strong>项目简介：</strong>
-								<br>属于CG产品PC客户端的附属产品，主要用于显示CG产品PC客户端上记录的结果以及相关数据操作的基本功能，
-								为客户提供便捷查看操作功能。
+								<br>属于CG产品PC客户端的附属产品，主要用于显示CG产品PC客户端上记录的结果以及相关数据删、改、隔离等操作的基本功能，
+								使客户能够随时随地通过手机端进行查看和操作，免去原本必须在PC端进行操作的不便。
 							</p>
 						</div>
 					</div>
@@ -101,7 +141,7 @@
 				<dd>
 					<div class="education-background">
 						<p>2008/08 -- 2012/07</p>
-						<h6>吉林大学<span class="ver-line">|</span>通信工程<span class="ver-line">|</span>本科</h6>
+						<h6>吉林大学<span class="ver-line">|</span>通信工程<span class="ver-line">|</span>统招本科</h6>
 					</div>
 				</dd>
 				<dt><h5>证书</h5></dt>
